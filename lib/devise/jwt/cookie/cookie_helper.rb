@@ -2,7 +2,7 @@ module Devise
   module JWT
     module Cookie
       class CookieHelper
-        include Cookie::Import['name', 'domain', 'secure']
+        include Cookie::Import['name', 'domain', 'secure', 'same_site']
 
         def build(token)
           if token.nil?
