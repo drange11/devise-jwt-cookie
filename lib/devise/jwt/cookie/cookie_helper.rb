@@ -38,6 +38,7 @@ module Devise
             path: '/',
             httponly: true,
             secure: secure,
+            same_site: same_site,
             max_age: '0',
             expires: Time.at(0)
           }
